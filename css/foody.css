@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --primary_color: #e74c3c;
+    --white_color: #fff;
+    --ubuntu: "Ubuntu Mono", monospace;
+    --righteous: "Righteous", cursive;
+    --box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+html {
+   font-size: 70%;
+}
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   font-family: "Poppins", sans-serif;
+}
+
+/*---------------------- utility classes-- start-----------------------------------*/
+a {
+   text-decoration: none;
+}
+
+.container {
+   max-width: 640px; 
+   margin: 0 ;
+   margin-left: 67rem;
+   padding: 0 80px;
+}
+/*---------------------- utility-- closes--------------------------------*/
+
+/*---------------------- header--start----------------------------------*/
+header {
+   width: 100%;
+   background: rgba(3, 3, 3, 0.6);
+   position: fixed;
+   padding: 1.5rem  0;
+}
+
+.logo img {
+   display: block;
+   width: 18%;
+}
+
+.navbar {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.navbar nav {
+   display: flex;
+   align-items: center;
+}
+
+.navbar nav li {
+   list-style-type: none;
+   margin: 0 1rem;
+}
+
+.btn{
+   font-size: 2.2rem;
+   color: white;
+   cursor: pointer;
+   display: none;
+}
+
+.navbar nav li a {
+   font-size: 1.9rem;
+   color: var(--white_color);
+   position: relative;
+
+}
+
+.navbar nav li a::after{
+   content: "";
+   position: absolute;
+   height: 3px;
+   background: var(--primary_color);
+   width : 00%;
+   left: 0%;
+   top: 30px;
+   bottom: 0;
+   transition: all 0.3s ease-in-out;
+}
+
+
+
+/*------------------------header end ---------------------------------*/
+
+/*------------------------showcase start css ---------------------------------*/
+
+#showcase::before{
+   content: "";
+   background: #e74c3c;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index : -11;
+
+}
+#showcase {
+   background: url('../images/foody.jpg') no-repeat center center/cover;
+   min-height: 100vh;
+
+
+   .content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      min-height: 100vh;
+   } 
+   .content h2{
+      font-size: 7rem;
+      font-family: var(--righteous);
+      color: var(--white_color);
+      text-align: center;
+      letter-spacing: 2px;
+   }
+   
+}
+
+

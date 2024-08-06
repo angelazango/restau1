@@ -1,0 +1,61 @@
+/* Media query for screens with a max width of 1070px */
+@media (max-width: 1070px) {
+    html {
+        font-size: 60%;
+    }
+
+    .container {
+        padding: 0 60px;
+    }
+}
+
+/* Media query for screens with a max width of 900px */
+@media (max-width: 900px) {
+    html {
+        font-size: 55%;
+    }
+    .container {
+        padding: 0 40px;
+    }
+
+.btn{
+
+    display: block;
+ }
+ .navbar .nav {
+    display: flex;
+    flex-direction: column;
+    position: flex;
+    min-width: 100%;
+    min-height: 60vh;
+    top: 0;
+    right: 100%;
+    background: black;
+    align-items: flex-start;
+    justify-content: center;
+ }
+
+
+
+ 
+.navbar nav li {
+   
+    margin: 2rem 4rem;
+}
+.navbar nav li a {
+    font-size:1.4rem ;
+    color: var(--white_color);
+    position: relative;
+
+ }
+.close_btn{
+    position: absolute;
+    top: 0;
+    left: 90%;
+    margin: 25px;
+
+
+}
+
+
+ }
